@@ -36,3 +36,18 @@ a new smaller function scope. This revealed two things to me:
   due to the exiting pollution of the space
 * Performance difference of the let and var `for` loops is negligible (especially if you aren't
   actually leveraging the separate closures in the let version).
+
+## contact-finder
+
+One of the code examples from [MDN article on looping
+code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code). Used
+to demonstrate using break to short circuit a search operation once the key has been found in the
+target array.
+
+Interesting points included:
+
+* Use of the focus() method on the text field (but presumably -- any DOM element) to place the text
+  cursor back in the field after submitting -- to be ready for the next search.
+* The search field doesn't submit upon pressing enter. This must require the use of an additional
+  listener to the same function call-back.
+  
